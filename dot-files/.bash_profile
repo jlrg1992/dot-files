@@ -1,4 +1,4 @@
-alias editbash="vim ~/dev_stuff/dot-files/.bash_profile && cp ~/dev_stuff/dot-files/.bash_profile ~"
+alias editbash=" ~/dev_stuff/scripts/manage-dot-files"
 alias djman='python3 "$PWD"/manage.py'
 alias resetbash="source ~/.bash_profile"
 alias v="python3 ~/dev_stuff/vitacora/script.py"
@@ -18,3 +18,12 @@ alias gpush="git push"
 alias ginit="git init"
 alias gpull="git pull"
 alias updatebash="cd  ~/dev_stuff/dot-files/ && git pull"
+alias ch="chmod 0755"
+alias ms="cd ~/dev_stuff/scripts && ./first"
+
+
+
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$_";
+}
