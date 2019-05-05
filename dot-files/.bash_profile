@@ -20,7 +20,7 @@ alias gpull="git pull"
 alias updatebash="cd  ~/dev_stuff/dot-files/ && git pull"
 alias ch="chmod 0755"
 alias ms="cd ~/dev_stuff/scripts && ./first"
-
+alias ..="cd .."
 
 
 # Create a new directory and enter it
