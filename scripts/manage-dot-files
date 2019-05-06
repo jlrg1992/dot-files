@@ -7,5 +7,6 @@ git add -A
 git commit -m ".bash_profile new line"
 git push
 cd ${HOLDER}
+echo "It's done"
 
 source ~/.bash_profile
