@@ -28,13 +28,3 @@ alias ca="clear && ls -A"
 function mkd() {
     mkdir -p "$@" && cd "$_";
 }
-function cd() {
-    cd $@
-    clear
-    ls
-}
-function cda(){
-    cd $@
-    clear
-    ls -A
-}
