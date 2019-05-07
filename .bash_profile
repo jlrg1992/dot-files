@@ -23,7 +23,18 @@ alias ms="cd ~/dev-stuff/dot-files/scripts && ./first"
 alias ..="cd .."
 alias ca="clear && ls -A"
 
+
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$_";
+}
+function cd() {
+    cd $@
+    clear
+    ls
+}
+function cda(){
+    cd $@
+    clear
+    ls -A
 }
