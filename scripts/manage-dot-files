@@ -2,7 +2,7 @@
 HOLDER = pwd
 cd ~/dev-stuff/dot-files
 vim .bash_profile
-cp.bash_profile ~
+cp .bash_profile ~
 git add -A
 git commit -m ".bash_profile new line"
 git push
