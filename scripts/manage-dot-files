@@ -1,6 +1,6 @@
 #!/bin/bash
 HOLDER = pwd
-cd ~/dev_stuff/dot-files/
+cd ~/dev_stuff/dot-files
 vim .bash_profile
 cp.bash_profile ~
 git add -A
