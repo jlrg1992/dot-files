@@ -22,12 +22,9 @@ alias ch="chmod 0755"
 alias ms="cd ~/dev-stuff/dot-files/scripts && ./first"
 alias ..="cd .."
 alias ca="clear && ls -A"
-
+alias cda="cd ~/dev-stuff/dot-files/scripts && ./cda"
 
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$_";
-}
-function cd() {
-    cd "$@" && ls
 }

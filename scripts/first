@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/dev_stuff/scripts/
+cd ~/dev-stuff/dot-files/scripts/
 echo "#!/bin/bash" >> $@
 vim "$@"
 chmod 0755 "$@"
