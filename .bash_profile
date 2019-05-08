@@ -4,7 +4,8 @@ alias resetbash="source ~/.bash_profile"
 alias j="python3 ~/dev-stuff/journal/script.py"
 alias jw="python3 ~/dev-stuff/journal/script.py w"
 alias desk="cd ~/Desktop"
-alias dev="cd ~/dev-stuff && clear && ls"
+alias v="vim"
+alias dev="cd ~/dev-stuff"
 alias frontend="python3.7 ~/dev-stuff/front-project/front_end.py"
 alias home="cd ~"
 alias cl="clear && ls"
@@ -28,13 +29,10 @@ alias bin="cd /usr/local/bin"
 alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 
 
-
 # Create a new directory and enter it
 function mkd() {
     mkdir -p "$@" && cd "$_";
 }
+# cd function with clear and ls
 
-# Craete a cd function with ls
-function c() {
-    cd "$@" && clear && ls;
-}
+cd() { builtin cd "$@" && clear  && ls; }
