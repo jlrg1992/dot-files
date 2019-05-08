@@ -33,3 +33,8 @@ alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 function mkd() {
     mkdir -p "$@" && cd "$_";
 }
+
+# Craete a cd function with ls
+function c() {
+    cd "$@" && clear && ls;
+}
