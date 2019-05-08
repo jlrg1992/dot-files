@@ -20,6 +20,7 @@ alias gi="git init"
 alias gpull="git pull"
 alias ch="chmod 0755"
 alias ms="cd ~/dev-stuff/dot-files/scripts && ./first"
+alias gdot="~/dev-stuff/dot-files/scripts/git-dot-files"
 alias ..="cd .."
 alias ca="clear && ls -A"
 
