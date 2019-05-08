@@ -21,10 +21,13 @@ alias gpull="git pull"
 alias ch="chmod 0755"
 alias ms="cd ~/dev-stuff/dot-files/scripts && ./first"
 alias gdot="~/dev-stuff/dot-files/scripts/git-dot-files"
-alias g="pwd | ~/dev-stuff/dot-files/scripts/git-dot-files"
+alias g="~/dev-stuff/dot-files/scripts/git-everything"
 alias ..="cd .."
 alias ca="clear && ls -A"
 alias bin="cd /usr/local/bin"
+alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
+
+
 
 # Create a new directory and enter it
 function mkd() {

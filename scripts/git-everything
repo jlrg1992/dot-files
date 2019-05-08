@@ -1,7 +1,5 @@
 #!/bin/bash
 
-PLACE=$@
-cd $PLACE
 read -p "Insert commit message: " MESSA
 git add -A
 git commit -m "$MESSA"
