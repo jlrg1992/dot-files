@@ -1,0 +1,7 @@
+#!/bin/bash
+
+read -p "Insert commit message: " MESSA
+cd ~/dev-stuff/dot-files
+git add -A
+git commit -m "$MESSA"
+git push
