@@ -1,3 +1,4 @@
+export TERM=xterm-256color
 alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bash_profile"
 alias djman='python3 "$PWD"/manage.py'
 alias resetbash="source ~/.bash_profile"
@@ -27,6 +28,7 @@ alias ..="cd .."
 alias ca="clear && ls -A"
 alias bin="cd /usr/local/bin"
 alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
+alias docs="cd ~/Documents"
 
 
 # Create a new directory and enter it
@@ -36,3 +38,4 @@ function mkd() {
 # cd function with clear and ls
 
 cd() { builtin cd "$@" && clear  && ls; }
+cda() { builtin cd "$@" && clear && ls -A; }
