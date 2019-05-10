@@ -1,7 +1,7 @@
 #!/bin/bash
 HOLDER=pwd | echo
 cd ~/dev-stuff/dot-files
-vim .bash_profile
-cp .bash_profile ~
+vim .bashrc
+cp .bashrc ~
 cd ${HOLDER}
 echo "It's done"
