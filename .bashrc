@@ -1,7 +1,7 @@
 export TERM=xterm-256color
 alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bash_profile"
 alias djman='python3 "$PWD"/manage.py'
-alias resetbash="source ~/.bash_profile"
+alias resetbash="source ~/.bashrc"
 alias j="python3 ~/dev-stuff/journal/script.py"
 alias jw="python3 ~/dev-stuff/journal/script.py w"
 alias desk="cd ~/Desktop"
@@ -30,7 +30,7 @@ alias bin="cd /usr/local/bin"
 alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 alias docs="cd ~/Documents"
 alias n="nnn"
-
+alias e="exit"
 
 # Create a new directory and enter it
 function mkd() {
