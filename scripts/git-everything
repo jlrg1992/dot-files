@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Insert commit message: " MESSA
+read -p "Insert commit message: " LOL
 git add -A
-git commit -m "$MESSA"
+git commit -m "$LOL"
 git push
