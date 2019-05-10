@@ -1,5 +1,5 @@
 export TERM=xterm-256color
-alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bash_profile"
+alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bashrc"
 alias djman='python3 "$PWD"/manage.py'
 alias resetbash="source ~/.bashrc"
 alias j="python3 ~/dev-stuff/journal/script.py"
