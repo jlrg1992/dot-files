@@ -29,6 +29,7 @@ alias ca="clear && ls -A"
 alias bin="cd /usr/local/bin"
 alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 alias docs="cd ~/Documents"
+alias n="nnn"
 
 
 # Create a new directory and enter it
