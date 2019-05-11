@@ -31,6 +31,10 @@ alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 alias docs="cd ~/Documents"
 alias n="nnn"
 alias e="exit"
+set -o vi
+
+
+
 
 # Create a new directory and enter it
 function mkd() {
