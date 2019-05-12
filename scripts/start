@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cp ../.bash_profilee ~
+cp ../.bash_profile ~
 cp ../.bashrc ~
 cp ../.vimrc ~
