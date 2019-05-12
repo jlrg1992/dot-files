@@ -32,6 +32,8 @@ alias n="nnn"
 alias e="exit"
 alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bashrc"
 alias editvimrc="~/dev-stuff/dot-files/scripts/manage-vim-rc"
+
+
 set -o vi
 
 
@@ -45,3 +47,4 @@ function mkd() {
 
 cd() { builtin cd "$@" && clear  && ls; }
 cda() { builtin cd "$@" && clear && ls -A; }
+mupdf () { mupdf-gl $1 >/dev/null 2>&1 & }
