@@ -2,3 +2,4 @@
 
 cp ../.bash_profilbash_profilee ~
 cp ../.bashrc ~
+cp ../.vimrc ~
