@@ -1,8 +1,8 @@
 export TERM=xterm-256color
 alias djman='python3 "$PWD"/manage.py'
 alias resetbash="source ~/.bashrc"
-alias j="python3 ~/dev-stuff/journal/script.py"
-alias jw="python3 ~/dev-stuff/journal/script.py w"
+alias j="~/dev-stuff/terminal-journal/start"
+alias jw="~/dev-stuff/terminal-journal/start w"
 alias desk="cd ~/Desktop"
 alias v="vim"
 alias dev="cd ~/dev-stuff"
