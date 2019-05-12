@@ -1,0 +1,7 @@
+#!/bin/bash
+HOLDER=pwd | echo
+cd ~/dev-stuff/dot-files
+vim .vimrc
+cp .vimrc ~
+cd ${HOLDER}
+echo "It's done"
