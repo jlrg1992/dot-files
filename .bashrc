@@ -32,6 +32,8 @@ alias n="nnn"
 alias e="exit"
 alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bashrc"
 alias editvimrc="~/dev-stuff/dot-files/scripts/manage-vim-rc"
+alias dot="cd ~/dev-stuff/dot-files"
+
 
 
 set -o vi
