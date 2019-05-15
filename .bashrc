@@ -13,7 +13,6 @@ alias p="python3"
 alias pip="pip3"
 alias la="ls -A"
 alias server="cd ~/../../Applications/MAMP/htdocs"
-alias blog="cd ~/../../Applications/MAMP/htdocs/blog/"
 alias clone="git clone"
 alias gc="git add -A && read -p 'Commit message: ' | git commit -m"
 alias gp="git push"
@@ -36,6 +35,7 @@ alias r="ranger"
 alias blog="cd ~/dev-stuff/blog"
 alias dreset="~/dev-stuff/dot-files/scripts/start"
 alias vimrc="vim ~/dev-stuff/dot-files/.vimrc"
+alias getbib="~/dev-stuff/dot-files/scripts/getbib"
 # Last alias
 
 
