@@ -28,14 +28,15 @@ alias ca="clear && ls -A"
 alias bin="cd /usr/local/bin"
 alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 alias docs="cd ~/Documents"
-alias n="nnn"
 alias e="exit"
 alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bashrc"
 alias editvimrc="~/dev-stuff/dot-files/scripts/manage-vim-rc"
 alias dot="cd ~/dev-stuff/dot-files"
-alias ran="ranger"
-
-
+alias r="ranger"
+alias blog="cd ~/dev-stuff/blog"
+alias dreset="~/dev-stuff/dot-files/scripts/start"
+alias vimrc="vim ~/dev-stuff/dot-files/.vimrc"
+# Last alias
 
 
 set -o vi
