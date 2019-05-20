@@ -36,6 +36,7 @@ alias blog="cd ~/dev-stuff/blog"
 alias dreset="~/dev-stuff/dot-files/scripts/start"
 alias vimrc="vim ~/dev-stuff/dot-files/.vimrc"
 alias getbib="~/dev-stuff/dot-files/scripts/getbib"
+alias readme="vim README.md"
 # Last alias
 
 
