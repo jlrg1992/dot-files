@@ -1,10 +1,12 @@
+PS1="\w \$ "
 export TERM=xterm-256color
+export RANGER_LOAD_DEFAULT_RC=FALSE
 alias djman='python3 "$PWD"/manage.py'
+alias v="vim"
 alias resetbash="source ~/.bashrc"
 alias j="~/dev-stuff/terminal-journal/start"
 alias jw="~/dev-stuff/terminal-journal/start w"
 alias desk="cd ~/Desktop"
-alias v="vim"
 alias dev="cd ~/dev-stuff"
 alias frontend="python3.7 ~/dev-stuff/front-project/front_end.py"
 alias home="cd ~"
@@ -29,23 +31,19 @@ alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls"
 alias docs="cd ~/Documents"
 alias e="exit"
 alias editbash="~/dev-stuff/dot-files/scripts/manage-dot-files && source ~/.bashrc"
-alias editvimrc="~/dev-stuff/dot-files/scripts/manage-vim-rc"
+alias editvimrc="~/dev-stuff/dot-files/scripts/manage-vim-rc && cd ~/dev-stuff/dot-files/scripts && ./start"
 alias dot="cd ~/dev-stuff/dot-files"
 alias r="ranger"
-alias blog="cd ~/dev-stuff/blog"
+alias blog="cd ~/dev-stuff/static-generator"
 alias dreset="~/dev-stuff/dot-files/scripts/start"
 alias vimrc="vim ~/dev-stuff/dot-files/.vimrc"
 alias getbib="~/dev-stuff/dot-files/scripts/getbib"
 alias readme="vim README.md"
-# Last alias
-
-
+alias bibmed="cd ~/Desktop/biblioteca/med"
+# Last alias -- Final de alias -- last
 set -o vi
-
-
-
-
 # Create a new directory and enter it
+
 function mkd() {
     mkdir -p "$@" && cd "$_";
 }

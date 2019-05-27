@@ -1,4 +1,4 @@
-let mapleader =" "
+let mapleader ="/"
 
 set wildmode=longest,list,full
 set number relativenumber
@@ -59,7 +59,7 @@ set splitbelow splitright
 
 "MARKDOWN
 	autocmd Filetype markdown map <leader>w yiWi[<esc>Ea](<esc>pa)
-	autocmd Filetype markdown inoremap ,n ---<Enter><Enter>
+	autocmd Filetype markdown inoremap ,n ---<Enter>
 	autocmd Filetype markdown inoremap ,b ****<++><Esc>F*hi
 	autocmd Filetype markdown inoremap ,s ~~~~<++><Esc>F~hi
 	autocmd Filetype markdown inoremap ,e **<++><Esc>F*i
