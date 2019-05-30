@@ -5,6 +5,11 @@ set number relativenumber
 set encoding=utf-8
 syntax on
 filetype plugin on
+" show tabs as 4 spaces
+set tabstop=4
+
+" On pressing tab, insert 4 spaces
+set expandtab
 
 map <leader>s :setlocal spell! spelllang=es<CR>
 

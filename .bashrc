@@ -1,14 +1,15 @@
 PS1="\w \$ "
-export TERM=xterm-256color
+export PYTHONPATH="/usr/local/lib/python3.7/site-packages"
 export RANGER_LOAD_DEFAULT_RC=FALSE
 alias djman='python3 "$PWD"/manage.py'
+alias wp='cd /Applications/MAMP/htdocs/wordpress/wp-content/themes/my-theme'
 alias v="vim"
 alias resetbash="source ~/.bashrc"
 alias j="~/dev-stuff/terminal-journal/start"
 alias jw="~/dev-stuff/terminal-journal/start w"
 alias desk="cd ~/Desktop"
 alias dev="cd ~/dev-stuff"
-alias frontend="python3.7 ~/dev-stuff/front-project/front_end.py"
+alias frontend="/Users/jorgeluisrangelgarcia/dev-stuff/simple-frontend/simple-frontend"
 alias home="cd ~"
 alias cl="clear && ls"
 alias p="python3"
