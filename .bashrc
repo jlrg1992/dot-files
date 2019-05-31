@@ -52,4 +52,4 @@ function mkd() {
 
 cd() { builtin cd "$@" && clear  && ls; }
 cda() { builtin cd "$@" && clear && ls -A; }
-mupdf () { mupdf-gl $1 >/dev/null 2>&1 & }
+mupdf () { mupdf-gl $1 >/dev/null 2>&1 ; }
