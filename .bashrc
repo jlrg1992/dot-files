@@ -1,5 +1,4 @@
 PS1="\w \$ "
-export PYTHONPATH="/usr/local/lib/python3.7/site-packages"
 export RANGER_LOAD_DEFAULT_RC=FALSE
 alias djman='python3 "$PWD"/manage.py'
 alias wp='cd /Applications/MAMP/htdocs/wordpress/wp-content/themes/my-theme'
@@ -53,3 +52,4 @@ function mkd() {
 cd() { builtin cd "$@" && clear  && ls; }
 cda() { builtin cd "$@" && clear && ls -A; }
 mupdf () { mupdf-gl $1 >/dev/null 2>&1 ; }
+source .df
