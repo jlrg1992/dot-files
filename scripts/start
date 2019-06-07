@@ -1,7 +1,8 @@
 #!/bin/bash
 
 HOLDER=pwd | echo
-cd ~/dev-stuff/dot-files
+cd `dirname $0`
+cd ..
 cp .bash_profile ~
 cp .vimrc ~
 cp .bashrc ~
