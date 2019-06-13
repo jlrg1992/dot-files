@@ -1,0 +1,8 @@
+#!/bin/bash
+HOLDER=`pwd`
+cd `dirname $0`/..
+pwd
+vim .bashrc
+cp .bashrc ~
+cd ${HOLDER}
+echo "It's done"

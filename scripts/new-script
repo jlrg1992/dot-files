@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd `dirname $0`
+if [ -z "$1" ];
+    then
+    echo "new-script: You need to give it a name"
+else
+    echo "#!/bin/bash" >> $1
+    vim "$1"
+    chmod 0755 "$1"
+fi

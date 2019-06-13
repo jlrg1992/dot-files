@@ -1,0 +1,5 @@
+
+function mkd() {
+mkdir -p "$@" && cd "$_";
+}
+cd() { builtin cd "$@" && clear  && ls; }

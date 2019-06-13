@@ -6,5 +6,6 @@ cd ..
 cp .bash_profile ~
 cp .vimrc ~
 cp .bashrc ~
+cp .functions ~
 cd ${HOLDER}
 echo "It's done"

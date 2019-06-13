@@ -1,4 +1,4 @@
-let mapleader ="/"
+let mapleader =" "
 
 set wildmode=longest,list,full
 set number relativenumber

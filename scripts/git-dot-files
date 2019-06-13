@@ -1,7 +1,0 @@
-#!/bin/bash
-
-read -p "Insert commit message: " MESSA
-cd "$( dirname "${BASH_SOURCE[0]}" )"
-git add -A
-git commit -m "$MESSA"
-git push
