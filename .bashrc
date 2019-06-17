@@ -2,7 +2,7 @@ PS1="\w \$ "
 export RANGER_LOAD_DEFAULT_RC=FALSE
 set -o vi
 source ~/.functions
-export PATH="$PATH:/Users/jorgeluisrangelgarcia/dev-stuff/dot-files/scripts"
+export PATH="$PATH:~/dev-stuff/dot-files/scripts"
 alias djman='python3 "$PWD"/manage.py'
 alias wp='cd /Applications/MAMP/htdocs/wordpress/wp-content/themes/my-theme'
 alias v="vim"
@@ -11,7 +11,6 @@ alias j="~/dev-stuff/terminal-journal/start"
 alias jw="~/dev-stuff/terminal-journal/start w"
 alias desk="cd ~/Desktop"
 alias dev="cd ~/dev-stuff"
-alias home="cd ~"
 alias cl="clear && ls"
 alias p="python3"
 alias python="python3"
@@ -39,3 +38,4 @@ alias compblog="~/dev-stuff/static-generator/compile"
 alias hola="echo Hola"
 alias adios="echo Adios"
 alias editbash="~/dev-stuff/dot-files/scripts/editbash; source ~/.bashrc"
+alias hc="history -c"
