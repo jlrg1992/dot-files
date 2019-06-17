@@ -1,4 +1,8 @@
 PS1="\w \$ "
+if [ `uname` = Linux ];
+then
+    alias open="xdg-open"
+fi
 export RANGER_LOAD_DEFAULT_RC=FALSE
 set -o vi
 source ~/.functions
