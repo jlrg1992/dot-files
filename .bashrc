@@ -5,7 +5,6 @@ then
 fi
 export RANGER_LOAD_DEFAULT_RC=FALSE
 set -o vi
-source ~/.functions
 export PATH="$PATH:~/dev-stuff/dot-files/scripts"
 alias djman='python3 "$PWD"/manage.py'
 alias wp='cd /Applications/MAMP/htdocs/wordpress/wp-content/themes/my-theme'
@@ -22,6 +21,7 @@ alias pip="pip3"
 alias la="ls -A"
 alias server="cd ~/../../Applications/MAMP/htdocs"
 alias clone="git clone"
+alias pull="git pull"
 alias gc="git add -A && read -p 'Commit message: ' | git commit -m"
 alias gp="git push"
 alias gi="git init"

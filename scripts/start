@@ -5,7 +5,6 @@ cd `dirname $0`
 cd ..
 cp .bash_profile ~
 cp .vimrc ~
-cp .bashrc ~
-cp .functions ~
+cat .bashrc .functions > ~/.bashrc
 cd ${HOLDER}
 echo "It's done"
