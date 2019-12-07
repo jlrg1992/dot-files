@@ -1,10 +1,10 @@
 #!/bin/bash
 
-HOLDER=pwd | echo
-cd `dirname $0`
+HOLDER=`pwd`
 cd ..
 cp .bash_profile ~
 cp .vimrc ~
 cat .bashrc .functions > ~/.bashrc
 cd ${HOLDER}
+./clone-repos
 echo "It's done"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ~/dev-stuff
+while read repo; do
+    git clone "$repo"
+done < ~/dev-stuff/dot-files/repolist.txt
