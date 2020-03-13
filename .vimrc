@@ -20,6 +20,12 @@ set splitbelow splitright
 	vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
 	map <leader><leader> <Esc>/<++><Enter>"_c4l
 
+"""TEXT
+    autocmd FileType text inoremap ,bh Hb: , Hto: <++>, Plq: <++>, Leu: <++>, Neu: <++>%<Esc>13bi
+    autocmd FileType text inoremap ,tp TP: , TPT: <++>, INR: <++><Esc>7bi
+    autocmd FileType text inoremap ,qs Glu: , BUN: <++>, Urea: <++>, Crea: <++><Esc>10bi
+    autocmd FileType text inoremap ,es Na: , K: <++>, Cl: <++><Esc>7bi
+
 """HTML
 	autocmd FileType html inoremap ,b <b></b><Space><++><Esc>FbT>i
 	autocmd FileType html inoremap ,it <em></em><Space><++><Esc>FeT>i
@@ -68,7 +74,6 @@ set splitbelow splitright
 	autocmd Filetype markdown inoremap ,b ****<++><Esc>F*hi
 	autocmd Filetype markdown inoremap ,s ~~~~<++><Esc>F~hi
 	autocmd Filetype markdown inoremap ,e **<++><Esc>F*i
-	autocmd Filetype markdown inoremap ,h ====<Space><++><Esc>F=hi
 	autocmd Filetype markdown inoremap ,i ![](<++>)<++><Esc>F[a
 	autocmd Filetype markdown inoremap ,a [](<++>)<++><Esc>F[a
 	autocmd Filetype markdown inoremap ,1 #<Space><Enter><Enter><++><Esc>kkA
