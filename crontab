@@ -1,0 +1,11 @@
+# So it can display notifications and open rhythmbox
+DISPLAY=":0.0"
+XAUTHORITY="/home/jlrg1992/.Xauthority"
+XDG_RUNTIME_DIR="/run/user/1000"
+# m     h       d   Mo  WD      command
+  *     *       *   *   *       date >> ~/dev-stuff/dot-files/registro.txt
+  *     *       *   *   *       ~/dev-stuff/dot-files/scripts/alarma
+  29    21      *   *   *       notify-send -t 120000 "Hora de tragar, chavo"
+  0     8,13    *   *   *       notify-send -t 120000 "Hora de tragar, chavo"
+  0     *       *   *   *       rm ~/tmp/*
+ 30     0       *   *   *       rhythmbox-client --quit

@@ -1,5 +1,6 @@
 let mapleader =" "
 
+set incsearch
 set wildmode=longest,list,full
 set number relativenumber
 set encoding=utf-8
@@ -21,7 +22,7 @@ set splitbelow splitright
 	map <leader><leader> <Esc>/<++><Enter>"_c4l
 
 """TEXT
-    autocmd FileType text inoremap ,bh Hb: , Hto: <++>, Plq: <++>, Leu: <++>, Neu: <++>%<Esc>13bi
+    autocmd FileType text inoremap ,bh Hb: , Hto: <++>, Plq: <++>, Leu: <++>, Neu: <++>#<Esc>13bi
     autocmd FileType text inoremap ,tp TP: , TPT: <++>, INR: <++><Esc>7bi
     autocmd FileType text inoremap ,qs Glu: , BUN: <++>, Urea: <++>, Crea: <++><Esc>10bi
     autocmd FileType text inoremap ,es Na: , K: <++>, Cl: <++><Esc>7bi

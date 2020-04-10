@@ -1,0 +1,4 @@
+#!/bin/bash
+VOL=${1:-70}
+pactl set-sink-mute 0 0
+pactl set-sink-volume 0 $VOL%

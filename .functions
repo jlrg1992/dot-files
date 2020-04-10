@@ -1,5 +1,18 @@
 
 function mkd() {
-mkdir -p "$@" && cd "$_";
+    mkdir -p "$@" && cd "$_";
 }
-cd() { builtin cd "$@" && clear  && ls; }
+function cd() {
+    builtin cd "$@" && clear  && ls --color;
+}
+function e() {
+    history -c && exit;
+}
+function c() {
+    echo $(($1));
+}
+function rgtr() {
+    wc -l ~/dev-stuff/dot-files/registro.txt | awk '{print "Has estado " $1/60 " hrs"}'
+    echo A partir de:
+    head -1 ~/dev-stuff/dot-files/registro.txt
+}

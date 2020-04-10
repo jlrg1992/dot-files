@@ -1,11 +1,7 @@
 #!/bin/bash
 
 HOLDER=`pwd`
-cd ..
-cp .bash_profile ~
-cp .vimrc ~
-cat .bashrc .functions > ~/.bashrc
-source ~/.bashrc
+cd .. && cp .bash_profile ~ && cp .vimrc ~ && cat .bashrc .functions > ~/.bashrc && source ~/.bashrc
 cd ${HOLDER}
-./clone-repos
 echo "It's done"
+exit 0

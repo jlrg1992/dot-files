@@ -1,0 +1,3 @@
+#!/bin/bash
+vim ~/dev-stuff/dot-files/crontab
+crontab -u jlrg1992 ~/dev-stuff/dot-files/crontab
