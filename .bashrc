@@ -1,5 +1,6 @@
 PS1="\w \$ "
 source ~/dev-stuff/dot-files/variables
+shopt -s autocd
 if [ `uname` = Linux ];
 then
     alias open="xdg-open"
@@ -15,7 +16,6 @@ alias cl="clear && ls --color"
 alias la="ls -A --color"
 alias clone="git clone"
 alias pull="git pull"
-alias ..="cd .."
 alias scripts="cd ~/dev-stuff/dot-files/scripts && clear && ls --color"
 alias docs="cd ~/Documentos"
 alias hc="history -c"
