@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function movefiles(){
+    FILES=`ls ~/Descargas | grep $1`
+    for f in $FILES
+        do
+        mv ~/Descargas/$f $2
+    done
+}
+
+while read LINE
+    do
+    movefiles $LINE
+done < ~/dev-stuff/dot-files/download-manager-config

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+
+for x in `ls ~/.ejercicio`;
+    do
+    date '+%d/%m/%Y' >> ~/.ejercicio/$x
+    vim ~/.ejercicio/$x
+done

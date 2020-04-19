@@ -1,7 +1,9 @@
 #!/bin/bash
 
 HOLDER=`pwd`
-cd .. && cp .bash_profile ~ && cp .vimrc ~ && cat .bashrc .functions > ~/.bashrc && source ~/.bashrc
+cd .. && cp .bash_profile ~ && cp .vimrc ~
+cat .bashrc variables .functions > ~/.bashrc
+source ~/.bashrc
 cd ${HOLDER}
 echo "It's done"
 exit 0

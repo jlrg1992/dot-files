@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cp ~/Plantillas/alta.txt $@.txt
-vim $@.txt

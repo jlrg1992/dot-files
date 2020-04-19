@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -s https://corona-stats.online/mx | grep "Mexico" | sed 's/\x1b\[[0-9;]*m//g' | sed 's/,//' | awk '{ let = $12*100/$7; print "Muertes: " $12 ; print "Casos: " $7 ; print "Letalidad: ", let ; }'

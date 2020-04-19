@@ -16,3 +16,8 @@ function rgtr() {
     echo A partir de:
     head -1 ~/dev-stuff/dot-files/registro.txt
 }
+function ns(){
+    echo '#!/bin/bash' > $1
+    chmod 0755 $1
+    vim $1
+}

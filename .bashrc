@@ -1,5 +1,4 @@
 PS1="\w \$ "
-source ~/dev-stuff/dot-files/variables
 shopt -s autocd
 if [ `uname` = Linux ];
 then
@@ -26,5 +25,5 @@ alias m="musica"
 alias mp="rhythmbox-client --play-pause"
 alias mq="rhythmbox-client --pause && rhythmbox-client --quit"
 alias editbash="editbash && source ~/.bashrc"
-alias bb="open ~/Escritorio/O\'Reilly\ bash\ CookBook.pdf && exit"
 alias bib="biblioteca"
+alias temp="sensors | grep 'temp1'"
