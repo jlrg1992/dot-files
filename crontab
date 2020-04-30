@@ -3,10 +3,6 @@ DISPLAY=":0.0"
 XAUTHORITY="/home/jlrg1992/.Xauthority"
 XDG_RUNTIME_DIR="/run/user/1000"
 # m     h       d   Mo  WD      command
-  *     *       *   *   *       date >> ~/dev-stuff/dot-files/registro.txt
-  *     *       *   *   *       ~/dev-stuff/dot-files/scripts/alarma
   0     5       *   *   *       rm ~/tmp/*
- 30     0       *   *   *       rhythmbox-client --quit
-  0     */3     *   *   *       ~/Escritorio/tmp-scripts/covid-alert
-*/15    *       *   *   *       ~/dev-stuff/dot-files/scripts/download-manager
+  */5   *       *   *   *       ~/dev-stuff/dot-files/scripts/download-manager
 

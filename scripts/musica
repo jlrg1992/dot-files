@@ -1,6 +1,7 @@
 #!/bin/bash
 VOL=${1:-70}
+SON=${2:-'/~/Escritorio/lista.pls'}
 pactl set-sink-mute 0 0
 pactl set-sink-volume 0 $VOL%
-nohup rhythmbox --playlists-file=/~/Escritorio/lista.pls > ~/tmp/music.out 2> /tmp/music.error&
+nohup rhythmbox --playlists-file=/$SON > ~/tmp/music.out 2> /tmp/music.error&
 rhythmbox-client --play
