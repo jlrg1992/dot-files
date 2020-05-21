@@ -29,7 +29,7 @@ set splitbelow splitright
 
 """JSON
    autocmd FileType json inoremap ,s "": "<++>"<Esc>hhhhhhhh
-    autocmd FileType json inoremap ,s "{pregunta": "", "respuesta":<++>}<Esc>4bli
+    autocmd FileType json inoremap ,q "{pregunta": "", "respuesta":<++>}<Esc>4bli
 
 """HTML
 	autocmd FileType html inoremap ,b <b></b><Space><++><Esc>FbT>i
