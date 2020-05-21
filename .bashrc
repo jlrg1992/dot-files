@@ -29,6 +29,8 @@ alias temp="sensors | grep 'temp1'"
 alias biblia="~/dev-stuff/vul/vul"
 alias clima="curl wttr.in/?format='%t+%h+%p+%c+%m'"
 alias dm="download-manager"
+alias p="python3"
+alias pip="pip3"
 #Rhythmbox
 alias m="musica"
 alias mp="rhythmbox-client --play-pause"
