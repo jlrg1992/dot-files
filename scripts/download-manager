@@ -1,10 +1,11 @@
 #!/bin/bash
+CONFIGPATH="../script-configs/download-manager"
 
 OPCION="$1"
 [ -l = "$OPCION" ]\
-    && { less ~/dev-stuff/dot-files/download-manager-config; exit 0; }
+    && { less $CONFIGPATH; exit 0; }
 [ -e = "$OPCION" ]\
-    && { vim ~/dev-stuff/dot-files/download-manager-config; exit 0; }
+    && { vim $CONFIGPATH; exit 0; }
 
 function movefiles(){
     FILES=`ls /home/jlrg1992/Descargas | grep "$1-"`
@@ -18,4 +19,4 @@ FECHA=`date '+%Y-%m-%d-%H-%M'`
 while read LINE
     do
     movefiles $LINE
-done < ~/dev-stuff/dot-files/download-manager-config
+done < $CONFIGPATH

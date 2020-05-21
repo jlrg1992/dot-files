@@ -1,9 +1,11 @@
 #!/bin/bash
 
 HOLDER=`pwd`
-cd .. && cp .bash_profile ~ && cp .vimrc ~
-cat .bashrc variables .functions > ~/.bashrc
+cd ../dots && cp bash_profile ~/.bash_profile && cp vimrc ~/.vimrc
+cat bashrc variables functions > ~/.bashrc
 source ~/.bashrc
+crontab -u jlrg1992 ../script-configs/crontab
+mkdir ~/tmp
 cd ${HOLDER}
 echo "It's done"
 exit 0

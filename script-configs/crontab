@@ -2,6 +2,8 @@
 DISPLAY=":0.0"
 XAUTHORITY="/home/jlrg1992/.Xauthority"
 XDG_RUNTIME_DIR="/run/user/1000"
+
+
 # m     h       d   Mo  WD      command
   0     5       *   *   *       rm ~/tmp/*
   */5   *       *   *   *       ~/dev-stuff/dot-files/scripts/download-manager

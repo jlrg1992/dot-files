@@ -1,3 +1,4 @@
 #!/bin/bash
-vim ~/dev-stuff/dot-files/crontab
-crontab -u jlrg1992 ~/dev-stuff/dot-files/crontab
+PLACETHING="../script-configs/crontab"
+vim "$PLACETHING"
+crontab -u jlrg1992 $PLACETHING

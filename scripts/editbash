@@ -1,7 +1,7 @@
 #!/bin/bash
 HOLDER=`pwd`
-cd `dirname $0`/..
-vim .bashrc
-cat .bashrc variables .functions > ~/.bashrc
+cd `dirname $0`/../dots
+vim bashrc
+cat bashrc variables functions > ~/.bashrc
 cd ${HOLDER}
 echo "It's done"
