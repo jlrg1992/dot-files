@@ -1,6 +1,16 @@
 #!/bin/bash
 
-VIDSSS=${1}
-AUDSSS="${VIDSSS%%\.*}"
+function convertidor(){
+  VIDSSS="${*}"
+  AUDSSS="${VIDSSS%%\.*}"
+  ffmpeg -i "$VIDSSS" -f mp3 -ab 192000 -vn "$AUDSSS".mp3 && \
+}
 
-ffmpeg -i "$VIDSSS" -f mp3 -ab 192000 -vn "$AUDSSS".mp3
+chmod -x "$@"
+
+for FILESSS in "$@"
+  do
+    convertidor "$FILESSS"
+done
+
+mv *.mp3 ~/Música/2020
