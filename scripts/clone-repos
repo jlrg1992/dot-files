@@ -3,4 +3,4 @@
 cd ~/dev-stuff
 while read repo; do
     git clone "$repo"
-done < ~/dev-stuff/dot-files/script-configs/repolist.txt
+done < `dirname $0`/../script-configs/repolist.txt

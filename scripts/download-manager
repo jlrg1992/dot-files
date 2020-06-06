@@ -1,5 +1,5 @@
 #!/bin/bash
-CONFIGPATH="../script-configs/download-manager"
+CONFIGPATH="`dirname $0`/../script-configs/download-manager"
 
 OPCION="$1"
 [ -l = "$OPCION" ]\

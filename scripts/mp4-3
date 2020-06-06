@@ -1,0 +1,6 @@
+#!/bin/bash
+
+VIDSSS=${1}
+AUDSSS="${VIDSSS%%\.*}"
+
+ffmpeg -i "$VIDSSS" -f mp3 -ab 192000 -vn "$AUDSSS".mp3

@@ -5,6 +5,6 @@ XDG_RUNTIME_DIR="/run/user/1000"
 
 
 # m     h       d   Mo  WD      command
-  0     5       *   *   *       rm ~/tmp/*
+  *     *       *   *   *       rm ~/tmp/* && rm "/home/jlrg1992/Imágenes/Cámara web"
   */5   *       *   *   *       ~/dev-stuff/dot-files/scripts/download-manager
 

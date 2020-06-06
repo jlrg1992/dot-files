@@ -1,4 +1,4 @@
 #!/bin/bash
-PLACETHING="../script-configs/crontab"
+PLACETHING="`dirname $0`/../script-configs/crontab"
 vim "$PLACETHING"
 crontab -u jlrg1992 $PLACETHING

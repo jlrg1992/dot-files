@@ -21,3 +21,6 @@ function ns(){
     chmod 0755 $1
     vim $1
 }
+function help(){
+  builtin help $1 | less
+}
