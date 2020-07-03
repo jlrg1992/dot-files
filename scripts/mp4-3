@@ -3,7 +3,7 @@
 function convertidor(){
   VIDSSS="${*}"
   AUDSSS="${VIDSSS%%\.*}"
-  ffmpeg -i "$VIDSSS" -f mp3 -ab 192000 -vn "$AUDSSS".mp3 && \
+  ffmpeg -i "$VIDSSS" -f mp3 -ab 192000 -vn "$AUDSSS".mp3
 }
 
 chmod -x "$@"
@@ -13,4 +13,4 @@ for FILESSS in "$@"
     convertidor "$FILESSS"
 done
 
-mv *.mp3 ~/Música/2020
+mv *.mp3 ~/Música/2020 && mv * ~/Vídeos/musica

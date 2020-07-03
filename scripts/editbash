@@ -2,6 +2,6 @@
 HOLDER=`pwd`
 cd `dirname $0`/../dots
 vim bashrc
-cat bashrc variables functions > ~/.bashrc
+cat bashrc > ~/.bashrc
 cd ${HOLDER}
 echo "It's done"

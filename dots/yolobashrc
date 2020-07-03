@@ -5,15 +5,10 @@ set -o vi
 export PATH="~/dev-stuff/dot-files/scripts:$PATH"
 export EDITOR="vim"
 export RANGR_LOAD_DEFAULT_RC="FALSE"
-export LE_POWERLINE="on"
 
 # Powerline thing
 function _update_ps1() {
-  if [[ $LE_POWERLINE != on ]]; then
-    PS1='[\u](\W)\$ '
-  else
     PS1=$(powerline-shell $?)
-  fi
 }
 
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
@@ -22,8 +17,6 @@ fi
 
 # Aliases
 alias open="xdg-open"
-alias powoff="LE_POWERLINE=of"
-alias powon="LE_POWERLINE=on"
 alias v="vim"
 alias r="ranger"
 alias dev="cd ~/dev-stuff"
@@ -34,7 +27,6 @@ alias clone="git clone"
 alias pull="git pull"
 alias magic="cd ~/dev-stuff/dot-files/scripts && clear && ls --color"
 alias docs="cd ~/Documentos"
-alias grep="grep --color"
 alias nm='cp ~/Plantillas/nota.txt $(date "+%d%m%Y_mat.txt") && vim $(date "+%d%m%Y_mat.txt") && xed $(date "+%d%m%Y_mat.txt")'
 alias editbash="editbash && source ~/.bashrc"
 alias temp="sensors | grep 'temp1'"
@@ -42,48 +34,7 @@ alias clima="curl wttr.in/?format='%t+%h+%p+%c+%m'"
 alias dm="download-manager"
 alias p="python3"
 alias pip="pip3"
-alias eb="editbash"
-
 #Rhythmbox
 alias m="musica"
 alias mp="rhythmbox-client --play-pause"
-alias mq="kill \$(ps -A | sed -n -e '/rhythm*/{s/ [^0-9]\{1,5\}.*//g ; p}')"
-
-# Functions
-function mkd() {
-    mkdir -p "$@" && cd "$_";
-}
-function cd() {
-    builtin cd "$@" && clear  && ls --color;
-}
-function e() {
-    history -c && exit;
-}
-function c() {
-    echo $(($1));
-}
-function rgtr() {
-    wc -l ~/dev-stuff/dot-files/registro.txt | awk '{print "Has estado " $1/60 " hrs"}'
-    echo A partir de:
-    head -1 ~/dev-stuff/dot-files/registro.txt
-}
-function ns(){
-    echo '#!/bin/bash' > $1
-    chmod 0755 $1
-    vim $1
-}
-function help(){
-  builtin help $1 | less
-}
-function inf(){
-  info $1 | less
-}
-function xp(){
-  nohup xplayer "$@" > ~/tmp/musica.out 2> ~/tmp/musica.error&
-}
-
-function yd(){
-  builtin cd ~/Vídeos/musica/sinmp3
-  pwd
-  youtube-dl "$@"
-}
+alias mq="rhythmbox-client --pause && rhythmbox-client --quit"
